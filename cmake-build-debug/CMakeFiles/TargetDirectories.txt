@@ -1,0 +1,3 @@
+D:/Desktop/SuperCAP-clion/cmake-build-debug/CMakeFiles/SuperCAP.elf.dir
+D:/Desktop/SuperCAP-clion/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Desktop/SuperCAP-clion/cmake-build-debug/CMakeFiles/rebuild_cache.dir

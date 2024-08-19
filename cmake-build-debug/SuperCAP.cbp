@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="SuperCAP"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/Desktop/SuperCAP-clion/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="H:/tools/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/SuperCAP-clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="H:/tools/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/SuperCAP-clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="H:/tools/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/SuperCAP-clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="H:/tools/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/SuperCAP-clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SuperCAP.elf">
+				<Option output="D:/Desktop/SuperCAP-clion/cmake-build-debug/SuperCAP.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Desktop/SuperCAP-clion/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DARM_MATH_MATRIX_CHECK"/>
+					<Add option="-DARM_MATH_ROUNDING"/>
+					<Add option="-DDEBUG"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F334x8"/>
+					<Add directory="D:/Desktop/SuperCAP-clion/Core/Inc"/>
+					<Add directory="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc"/>
+					<Add directory="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Device/ST/STM32F3xx/Include"/>
+					<Add directory="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Include"/>
+					<Add directory="D:/Desktop/SuperCAP-clion/User/Algorithm"/>
+					<Add directory="D:/Desktop/SuperCAP-clion/User/Application"/>
+					<Add directory="D:/Desktop/SuperCAP-clion/User/Bsp"/>
+					<Add directory="h:\tools\gcc-arm-none\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="h:\tools\gcc-arm-none\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="h:\tools\gcc-arm-none\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="h:\tools\gcc-arm-none\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="h:\tools\gcc-arm-none\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="h:\tools\gcc-arm-none\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="H:/tools/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/SuperCAP-clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 SuperCAP.elf"/>
+					<CompileFile command="H:/tools/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/SuperCAP-clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="H:/tools/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/SuperCAP-clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="H:/tools/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/SuperCAP-clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SuperCAP.elf/fast">
+				<Option output="D:/Desktop/SuperCAP-clion/cmake-build-debug/SuperCAP.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Desktop/SuperCAP-clion/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DARM_MATH_MATRIX_CHECK"/>
+					<Add option="-DARM_MATH_ROUNDING"/>
+					<Add option="-DDEBUG"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F334x8"/>
+					<Add directory="D:/Desktop/SuperCAP-clion/Core/Inc"/>
+					<Add directory="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc"/>
+					<Add directory="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Device/ST/STM32F3xx/Include"/>
+					<Add directory="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Include"/>
+					<Add directory="D:/Desktop/SuperCAP-clion/User/Algorithm"/>
+					<Add directory="D:/Desktop/SuperCAP-clion/User/Application"/>
+					<Add directory="D:/Desktop/SuperCAP-clion/User/Bsp"/>
+					<Add directory="h:\tools\gcc-arm-none\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="h:\tools\gcc-arm-none\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="h:\tools\gcc-arm-none\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="h:\tools\gcc-arm-none\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="h:\tools\gcc-arm-none\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="h:\tools\gcc-arm-none\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="H:/tools/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/SuperCAP-clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 SuperCAP.elf/fast"/>
+					<CompileFile command="H:/tools/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/SuperCAP-clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="H:/tools/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/SuperCAP-clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="H:/tools/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/SuperCAP-clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/Desktop/SuperCAP-clion/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="H:/tools/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/SuperCAP-clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="H:/tools/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/SuperCAP-clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="H:/tools/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/SuperCAP-clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="H:/tools/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/SuperCAP-clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/Desktop/SuperCAP-clion/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="H:/tools/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/SuperCAP-clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="H:/tools/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/SuperCAP-clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="H:/tools/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/SuperCAP-clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="H:/tools/mingw64/bin/mingw32-make.exe -f &quot;D:/Desktop/SuperCAP-clion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Core/Inc/adc.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Core/Inc/can.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Core/Inc/dma.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Core/Inc/gpio.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Core/Inc/hrtim.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Core/Inc/main.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Core/Inc/stm32f3xx_hal_conf.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Core/Inc/stm32f3xx_it.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Core/Inc/tim.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Core/Inc/usart.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Core/Src/adc.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Core/Src/can.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Core/Src/dma.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Core/Src/gpio.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Core/Src/hrtim.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Core/Src/main.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Core/Src/stm32f3xx_hal_msp.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Core/Src/stm32f3xx_it.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Core/Src/syscalls.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Core/Src/sysmem.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Core/Src/system_stm32f3xx.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Core/Src/tim.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Core/Src/usart.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Core/Startup/startup_stm32f334c8tx.s">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f334x8.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Device/ST/STM32F3xx/License.md">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Include/cmsis_armcc.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Include/cmsis_armclang.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Include/cmsis_compiler.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Include/cmsis_gcc.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Include/cmsis_iccarm.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Include/cmsis_version.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Include/core_armv8mbl.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Include/core_armv8mml.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Include/core_cm0.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Include/core_cm0plus.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Include/core_cm1.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Include/core_cm23.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Include/core_cm3.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Include/core_cm33.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Include/core_cm4.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Include/core_cm7.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Include/core_sc000.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Include/core_sc300.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Include/mpu_armv7.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Include/mpu_armv8.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/Include/tz_context.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/CMSIS/LICENSE.txt">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_adc.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_adc_ex.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_can.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_cortex.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma_ex.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_exti.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash_ex.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio_ex.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_hrtim.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c_ex.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc_ex.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_adc.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_bus.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_cortex.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_dma.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_exti.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_gpio.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_hrtim.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_pwr.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_rcc.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_system.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_tim.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_usart.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_ll_utils.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/License.md">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc_ex.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_can.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_hrtim.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim_ex.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/STM32F334C8TX_FLASH.ld">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/User/Algorithm/adc_to_elec.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/User/Algorithm/adc_to_elec.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/User/Algorithm/filter.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/User/Algorithm/filter.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/User/Algorithm/pid.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/User/Algorithm/pid.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/User/Application/power_loop.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/User/Application/power_loop.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/User/Application/supercap.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/User/Application/supercap.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/User/Bsp/bsp_adc.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/User/Bsp/bsp_adc.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/User/Bsp/bsp_can.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/User/Bsp/bsp_can.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/User/Bsp/bsp_gpio.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/User/Bsp/bsp_gpio.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/User/Bsp/bsp_hrtim.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/User/Bsp/bsp_hrtim.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/User/Bsp/bsp_tim.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/User/Bsp/bsp_tim.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/User/Bsp/bsp_uart.c">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/User/Bsp/bsp_uart.h">
+			<Option target="SuperCAP.elf"/>
+		</Unit>
+		<Unit filename="D:/Desktop/SuperCAP-clion/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
